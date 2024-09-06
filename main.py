@@ -2,7 +2,7 @@ import subprocess
 import sys
 import webbrowser
 
-print(webbrowser._browsers) # List available browsers
+print(webbrowser._browsers) # List available browser
 print("OS Platform:", sys.platform)
 
 

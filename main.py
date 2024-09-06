@@ -22,7 +22,7 @@ def windows_os(urls):
 
 def macos_os(urls):
     chrome_path = 'open -a /Applications/Google\\ Chrome.app %s'
-    # outlook_path = 'open -a /Applications/Microsoft Outlook.app'
+    #outlook_path = 'open -a /Applications/Microsoft Outlook.app'
     subprocess.Popen(['open', '/Applications/Microsoft Outlook.app/'])
     for url in urls:
         webbrowser.get(chrome_path).open(url,new=1)

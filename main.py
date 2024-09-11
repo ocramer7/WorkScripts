@@ -17,7 +17,8 @@ ques = messagebox.askquestion("WorkScripts", "Edit url file?")
 if ques == 'no':
     def windows_os(urls):
         # Windows spesific code here
-        chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe'
+        chrome_path = 'C:/Program Files/Google/Chrome/Application/chrome.exe %s'
+        subprocess.Popen(['C:/Program Files/WindowsApps/Microsoft.OutlookForWindows_1.2024.903.200_x64__8wekyb3d8bbwe/olk.exe'])
         for url in urls:
             webbrowser.get(chrome_path).open(url,new=1)
 
